@@ -30,15 +30,6 @@ ul {
   list-style-type: none;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1600px;
-  height: 600px;
-  top: 80px;
-}
-
 .imgs-section {
   justify-content: center;
   position: absolute;
@@ -196,6 +187,57 @@ ul {
   color: #ffffff;
 }
 
+.info-section {
+  background-color: #ffffff;
+  display: inline-flexbox;
+}
+
+.team-team {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 1600px;
+  height: 648px;
+  left: 0px;
+  top: 1449px;
+  background: #f5f4fa;
+}
+
+.team-team h1 {
+  position: absolute;
+  width: 165px;
+  height: 42px;
+  left: 718px;
+  top: 1543px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+
+  color: #212121;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+}
+
+.container2 {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  top: 1635px;
+  margin: 0px 150px 0 150px;
+  border-radius: 4px 4px 4px 4px;
+}
 .button {
   position: absolute;
   width: 200px;
@@ -205,6 +247,89 @@ ul {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+
+.skills-section,
+h1 {
+  position: absolute;
+  width: 198px;
+  height: 42px;
+  left: 701px;
+  top: 969px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.skills-section,
+.img1 {
+  position: absolute;
+  width: 370px;
+  height: 294px;
+  left: 215px;
+  top: 1061px;
+}
+
+.skills-section,
+.img2 {
+  position: absolute;
+  width: 370px;
+  height: 294px;
+  left: 1015px;
+  top: 1061px;
+}
+
+.skills-section,
+.img3 {
+  position: absolute;
+  width: 370px;
+  height: 294px;
+  left: 615px;
+  top: 1061px;
+}
+
+.skills-team {
+  /* What we do */
+
+  position: absolute;
+  width: 198px;
+  height: 42px;
+  left: 701px;
+  top: 969px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+.section-team {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  width: 165px;
+  height: 42px;
+  left: 718px;
+  top: 1543px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
 }
 
 .title-heading1 {
@@ -472,67 +597,155 @@ ul {
   color: black;
 }
 
+/*  footer section */
+
 .footer-section {
   background: #2f303a;
   width: 1600px;
   height: 251px;
-  flex-shrink: 0;
+  display: flex;
+  box-sizing: border-box;
+  /*  margin: 2097px; */
 }
 
 .footer-section > h2 {
-  color: #2196f3;
-  font-size: 26px;
-  font-style: var(--font-style);
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.78px;
+  line-height: 31px;
+  /*  padding: 60px 1240px 160px 215px; */
 }
 
-.footer-section > address > p {
-  color: #ffffff;
-}
-
-.footer-section > address > a,
-.email-footer {
+.phone-footer {
   display: flex;
+  line-height: 16px;
   width: 231px;
   height: 16px;
   flex-direction: column;
-  flex-shrink: var(--flex-shrink);
+  flex-shrink: 0;
+  /*  padding: 175px 1154px 60px 215px; */
 }
 
-.footer-section > address > a:hover,
-.footer-section > address > a:focus {
-  color: #af1e88;
+.email-footer {
+  display: flex;
+  line-height: 16px;
+  width: 231px;
+  height: 16px;
+  flex-direction: column;
+  flex-shrink: 0;
+  /*  padding: 147px 1154px 88px 215px; */
 }
 
-.web2 {
+.address-location {
+  display: flex;
+  line-height: 16px;
+  width: 207px;
+  height: 16px;
+  flex-direction: column;
+  flex-shrink: 0;
+  /*  padding: 119px 1178px 116px 215px; */
+}
+
+.adress-layout {
+  box-sizing: border-box;
+  width: 231px;
+  height: 72px;
+  flex-shrink: 0;
+  /*  margin: 119px 1154px 60px 215px; */
+}
+
+.footer-section {
+  position: absolute;
+  width: 1600px;
+  height: 251px;
+  left: 0px;
+  top: 2097px;
+  background: #2f303a;
+}
+
+.website-title-footer .web2 {
   position: absolute;
   width: 145px;
   height: 31px;
   left: 215px;
-  top: 2157px;
+  top: 60px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
-  /* identical to box height */
   letter-spacing: 0.03em;
   color: #2196f3;
 }
 
-.studio2 {
+.website-title-footer .studio2 {
   position: absolute;
   width: 145px;
   height: 31px;
-  left: 215px;
-  top: 275px;
+  left: 275px;
+  top: 60px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: #ffffff;
+}
+
+.footer-section > address > p {
+  width: 231px;
+  height: 72px;
+  flex-shrink: 0;
+  color: #ffffff;
+}
+
+.footer-section .email-footer {
+  position: absolute;
+  width: 231px;
+  height: 16px;
+  left: 215px;
+  top: 140px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height, or 114% */
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.phone-footer {
+  position: absolute;
+  width: 231px;
+  height: 16px;
+  left: 215px;
+  top: 165px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height, or 114% */
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address-location {
+  position: absolute;
+  width: 207px;
+  height: 16px;
+  left: 215px;
+  top: 113px;
+  flex-direction: column;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.42px;
+}
+.footer-section > address > a:hover,
+.footer-section > address > a:focus {
+  color: #af1e88;
 }
