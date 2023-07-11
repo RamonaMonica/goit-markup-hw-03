@@ -43,12 +43,9 @@ a {
   --category-line-high: 1.18em;
 }
 
-.body-font {
+.container {
   width: 1600px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  border-bottom: 1px solid #ececec;
 }
 
 .title {
